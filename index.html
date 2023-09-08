@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nav -->
+  
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">API Ideas</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+
+      <section id="hero">
+        <div class="section__text">
+          <p class="section__text__p1">Hi, I am</p>
+          <h1 class="title">Idong Wilson</h1>
+          <p class="section__text__p2">Software Engineer</p>
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/resume.pdf')"
+            >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          src="./images/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/in/idongwilson'"
+          />
+          <img
+          src="./images/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/talk2aidee?tab=repositories'"
+          />
+        </div>
+      </div>
+      <div class="section__pix-container">
+        <img src="./images/aidee.png" alt="Idong Wilson profile picture" />
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pix-container">
+          <img
+            src="./images/user2.png"
+            alt="Profile picture"
+            class="about-pix"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am a software engineering professional with fundamental knowledge of software design, development, Python, React, and JavaScript seeking an entry-level software engineer position.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./images/skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3 class="edu-tabs" onclick="opentab('skills')">Skills</h3>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 class="edu-tabs active" onclick="opentab('education')">Education</h3>
+            </div>
+          </div>
+          <div id="education" class="edu-contents active-tab">
+            <ul>
+              <li><span><strong>Software Engineering</strong></span><br><em>Coding Temple</em></li>
+              <li><span><strong>M.Sc. in Accounting</strong></span><br><em>Kaplan University</em></li>
+              <li><span><strong>MBA in Finance</strong></span><br><em>Kaplan University</em></li>
+              <li><span><strong>B.Sc. in Economics</strong></span><br><em>University of Uyo</em></li>
+            </ul>
+          </div>
+          <div id="skills" class="edu-contents">
+            <ul>
+              <li><span>Git, GitHub, Jupyter Notebook</span></li>
+              <li><span>NPM, Firebase, VS Code, Netlify</span></li>
+              <li><span>Python, JavaScipt, HTML5, CSS3</span></li>
+              <li><span>REST APIs, PostgreSQL, MySQL</span></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+    </div>
+  </div>
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./images/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Gradient Text Generator</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/talk2aidee/Gradient_Color_Generator'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://fancy-crumble-9d3eae.netlify.app'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./images/project-2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Text Generator</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com//talk2aidee/text_effect'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://precious-sopapillas-70ce88.netlify.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./images/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Portfolio Project</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/talk2aidee/portfolio'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://aesthetic-belekoy-b2fc44.netlify.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- API Calls -->
+
+  <section id="Ideas">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">API Ideas</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Random Joke Generator</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <div class="wrapper">
+                  <span1>&#128514;</span1>
+                  <p id="joke"></p>
+                  <button id="btn">Get Jokes</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Currency Converter</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <div class="wrapper">
+                  <div class="app-details">
+                    <img src="images/app-icon.png" class="app-icon" />
+                  </div>
+                  <label for="amount">Amount:</label>
+                  <input type="number" id="amount" value="100" />
+                  <div class="dropdowns">
+                    <select id="from-currency-select"></select>
+                    <select id="to-currency-select"></select>
+                  </div>
+                  <button1 id="convert-button">Convert</button1>
+                  <p id="result"></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./images/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./images/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/idongwilson">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#API Ideas">API Ideas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Idong Wilson. All Rights Reserved.</p>
+  </footer>
+
+
+
+<!-- Array Of Supported Country Codes -->
+<script src="currency-codes.js"></script>
+
+<!-- API Key Script -->
+<script src="api-key.js"></script>
+
+<!-- Script -->
+  <script src="script.js"></script>
+</body>
